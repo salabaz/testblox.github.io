@@ -37,11 +37,26 @@ sections:
           filename: bg-triangles.svg
           filters:
             brightness: 0.5
-  - block: markdown
+  - block: people
+    id: team
     content:
       title: Team
-      subtitle: Das sind wir
-      text: Add any **markdown** formatted content here - text, images, videos, galleries - and even HTML code!
+      # Choose which groups/teams of users to display.
+      #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
+      user_groups:
+        - Arzt
+        - MFA
+      sort_by: Params.last_name
+      sort_ascending: true
+    design:
+      # Show user's social networking links? (true/false)
+      show_social: false
+      # Show user's interests? (true/false)
+      show_interests: false
+      # Show user's role?
+      show_role: true
+      # Show user's organizations/affiliations?
+      show_organizations: false
   - block: features
     id: features
     content:

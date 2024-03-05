@@ -1,10 +1,10 @@
 ---
 # Display name
-title: salabaz
+title: traquine
 
 # Full name (for SEO)
-first_name: sal
-last_name: abaz
+first_name: tra
+last_name: quine
 
 # Status emoji
 status:
@@ -18,7 +18,7 @@ role: boss
 
 
 # Short bio (displayed in user profile at end of posts)
-bio: theboss
+bio: theotherboss
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
