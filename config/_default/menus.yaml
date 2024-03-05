@@ -12,7 +12,7 @@ main:
   - name: Leistungen
     identifier: leistungen
     weight: 40
- - name: Öffnungszeiten
+  - name: Öffnungszeiten
     url: /#öffnungszeiten
     weight: 20
   - name: Kontakt
