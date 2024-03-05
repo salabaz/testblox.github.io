@@ -8,55 +8,66 @@ design:
   spacing: "6rem"
 
 sections:
-  - block: hero
+  - block: collection
+    id: posts
     content:
-      title: Build Your Landing Pages with Hugo Blox
-      text: 🧱 EASY. FREE (OPEN SOURCE). NO-CODE  🧱
-      primary_action:
-        text: Übernahme
-        url: https://hugoblox.com/templates/
-        icon: rocket-launch
-      secondary_action:
-        text: Read the docs
-        url: https://docs.hugoblox.com
-      announcement:
-        text: "Announcing the release of version 1."
-        link:
-          text: "Read more"
-          url: "/blog/"
+      title: Aktuelles
+      subtitle: ''
+      text: 'Aktuelle Neuigkeiten'
+      # Choose how many pages you would like to display (0 = all pages)
+      count: 4
+      # Filter on criteria
+      filters:
+        # The folders to display content from
+        folders:
+          - post
+        author: ""
+        category: ""
+        tag: ""
+        publication_type: ""
+        featured_only: false
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+      # Choose how many pages you would like to offset by
+      # Useful if you wish to show the first item in the Featured widget
+      offset: 0
+      # Field to sort by, such as Date or Title
+      sort_by: 'Date'
+      sort_ascending: false
     design:
-      spacing:
-        padding: [0, 0, 0, 0]
-        margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
-      css_class: "dark"
-      background:
-        color: "navy"
-        image:
-          # Add your image background to `assets/media/`.
-          filename: bg-triangles.svg
-          filters:
-            brightness: 0.5
-  - block: people
+      # Choose a listing view
+      view: card
+  - block: collection
     id: team
     content:
       title: Team
-      # Choose which groups/teams of users to display.
-      #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
-      user_groups:
-        - Arzt
-        - MFA
-      sort_by: Params.last_name
-      sort_ascending: true
+      subtitle: ''
+      text: ''
+      # Choose how many pages you would like to display (0 = all pages)
+      count: 0
+      # Filter on criteria
+      filters:
+        # The folders to display content from
+        folders:
+          - team
+        author: ""
+        category: ""
+        tag: ""
+        publication_type: ""
+        featured_only: false
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+      # Choose how many pages you would like to offset by
+      # Useful if you wish to show the first item in the Featured widget
+      offset: 0
+      # Field to sort by, such as Date or Title
+      sort_by: 'Date'
+      sort_ascending: false
     design:
-      # Show user's social networking links? (true/false)
-      show_social: false
-      # Show user's interests? (true/false)
-      show_interests: false
-      # Show user's role?
-      show_role: true
-      # Show user's organizations/affiliations?
-      show_organizations: false
+      # Choose a listing view
+      view: card
   - block: features
     id: features
     content:
