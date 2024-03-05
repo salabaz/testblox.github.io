@@ -20,7 +20,7 @@ sections:
       filters:
         # The folders to display content from
         folders:
-          - post
+          - aktuell
         author: ""
         category: ""
         tag: ""
