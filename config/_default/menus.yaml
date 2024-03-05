@@ -6,15 +6,25 @@ main:
   - name: Home
     url: /#top
     weight: 10
-  - name: Features
-    url: /#features
-    weight: 20
-  - name: Solutions
-    url: /#solutions
+  - name: Team
+    url: /#team
     weight: 30
-  - name: Resources
+  - name: Leistungen
+    identifier: leistungen
     weight: 40
-    hasChildren: true
-  - parent: Resources
-    name: Blog
-    url: blog/
+ - name: Öffnungszeiten
+    url: /#öffnungszeiten
+    weight: 20
+  - name: Kontakt
+    url: /#kontakt
+    weight: 50
+  - name: Unsere Werte
+    url: /#werte
+    weight: 35
+
+  - parent: leistungen
+    name: HzV
+    url: leistungen/hzv/
+  - parent: leistungen
+    name: Selbstzahler
+    url: leistungen/igel/
