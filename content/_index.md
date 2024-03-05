@@ -13,7 +13,7 @@ sections:
       title: Build Your Landing Pages with Hugo Blox
       text: 🧱 EASY. FREE (OPEN SOURCE). NO-CODE  🧱
       primary_action:
-        text: Get Started
+        text: Übernahme
         url: https://hugoblox.com/templates/
         icon: rocket-launch
       secondary_action:
@@ -37,27 +37,11 @@ sections:
           filename: bg-triangles.svg
           filters:
             brightness: 0.5
-  - block: stats
+  - block: markdown
     content:
-      items:
-        - statistic: "1M+"
-          description: |
-            Websites built  
-            with Hugo Blox
-        - statistic: "10k+"
-          description: |
-            GitHub stars  
-            since 2016
-        - statistic: "3k+"
-          description: |
-            Discord community  
-            for support
-    design:
-      # Section background color (CSS class)
-      css_class: "bg-gray-100 dark:bg-gray-900"
-      # Reduce spacing
-      spacing:
-        padding: ["1rem", 0, "1rem", 0]
+      title: Team
+      subtitle: Das sind wir
+      text: Add any **markdown** formatted content here - text, images, videos, galleries - and even HTML code!
   - block: features
     id: features
     content:
